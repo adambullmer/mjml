@@ -86,8 +86,7 @@ class Group extends Component {
         return `mj-column-per-${parsedWidth}`
 
       case 'px':
-        const percentWidth = parseInt(width) / parentWidth * 100
-        return `mj-column-per-${percentWidth}`
+        return `mj-column-px-${parsedWidth}`
     }
   }
 
